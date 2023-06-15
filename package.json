@@ -1,0 +1,25 @@
+{
+  "name": "colne_disneyplus",
+  "version": "1.0.0",
+  "description": "Um clone da landing page do site da disney plus",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeMartinsBnf/colne_disneyPlus.git"
+  },
+  "author": "Felipe Martins Bonifacio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeMartinsBnf/colne_disneyPlus/issues"
+  },
+  "homepage": "https://github.com/FelipeMartinsBnf/colne_disneyPlus#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.4"
+  }
+}
