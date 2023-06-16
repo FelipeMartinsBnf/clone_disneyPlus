@@ -1,5 +1,60 @@
-$bg-color: blue;
+@use 'var';
+@use 'hero';
+
+@font-face {
+    font-family: Avenir;
+    src: url('../../assets/fonts/Avenir-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Avenir;
+    src: url('../../assets/fonts/Avenir-Bold.woff2');
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin text($font-size:16px){
+    font-size: $font-size;
+    line-height: $font-size + 10px;
+    color: var.$fn-color;
+}
+@mixin title($fn-size: 40px){
+    @include text($fn-size);
+    color: #f9f9f9;
+}
 
 body{
-    background-color: $bg-color;
+    background-color: var.$bg-color;
+    font-family: Avenir, sans-serif;
 }
+
+.text--big{
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--sm{
+    @include text(12px)
+}
+
+.link--text{
+    @include text(16px);
+    color: var.$fn-color-s;
+    text-decoration: underline;
+}
+
+.title{
+    @include title()
+}
+.title--sm{
+    @include title(28px)
+}
+
