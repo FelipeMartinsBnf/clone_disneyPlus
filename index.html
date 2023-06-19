@@ -18,17 +18,230 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Start+ - Combo+">
-                    <a href="#">ASSINE AGORA</a>
+                    <a class="button" href="#">ASSINE AGORA</a>
+                    <span class="text">R$ 55,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Start+ - Combo+">
-                    <a href="#">ASSINE AGORA</a>
+                    <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Disney+ - Start+ - Combo+">
+                    <a  class="button" href="#">ASSINE AGORA</a>
+                    <span  class="text">R$ 59,90/mês*</span>
                 </li>
             </ul>
-            <p class="link--text">
-                Assinar somente o Disney+ 
+            <p class="text">
+                <span class="link--text">Assinar somente o Disney+ </span> <br>
+                <span>* O preço pode variar caso a assinatura seja feita através de outras plataformas.</span>
             </p>
         </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+             <button data-tab-btn="em-breve" class="shows__tabs__btn shows__tabs__btn--is-active">Em Breve</button>
+             <button data-tab-btn="populares" class="shows__tabs__btn">Mais Populares</button>
+             <button data-tab-btn="star" class="shows__tabs__btn">Mais no Star+</button>
+        </nav>
+        <ul data-tab-id="em-breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="star" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="Spidey">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title">Escolha seu plano:</h2>
+        <p class="text--big">Cancele a qualquer momento</p>
+        <div class="plans__chart text">
+            <div class="plans__chart__header">
+                <div class="plans__chart__header__content--big"></div>
+                <div class="plans__chart__header__content">
+                    <p class="text">Disney+</p>
+                    <img src="./dist/images/logos/disneyplus_underline.png" alt="">
+                    <a href="#" class="button">R$ 33,90/mês*</a>
+                </div>
+                <div class="plans__chart__header__content plans__chart__header__content-highlight">
+                    <p class="text">Combo+</p>
+                    <span class="plans__chart__header__content__badge">Mais Popular</span>
+                    <img src="./dist/images/logos/disney_star_plus_sm.png" alt="">
+                    <a href="#" class="button">R$ 55,90/mês*</a>
+                </div>
+                <div class="plans__chart__header__content">
+                    <p class="text">Star+ Disney+ LIONSGATE+</p>
+                    <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="">
+                    <a href="#" class="button">R$ 59,90/mês*</a>
+                </div>
+
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Preço anual
+                </div>
+                <div class="plans__chart__row__content">
+                    R$ 279,90/ano à vista*<br>12 meses pelo preço de 9
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    <img src="./dist/images/icones/line.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/line.svg" alt="">
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Filmes, séries e originais exclusivos da Disney, Pixar, Marvel, Star Wars e National Geographic
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Os melhores torneios e ligas esportivas do mundo ao vivo com a ESPN
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/line.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Produções locais, programas, séries e filmes premiados exclusivos do Star+
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/line.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Dispositivos para reprodução simultânea
+                </div>
+                <div class="plans__chart__row__content">
+                    4
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    4 + 4
+                </div>
+                <div class="plans__chart__row__content">
+                    4 + 4 + 4
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Baixe seus favoritos para assistir sem precisar de internet
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Crie perfis personalizados na sua conta
+                </div>
+                <div class="plans__chart__row__content">
+                    7
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    7 + 7
+                </div>
+                <div class="plans__chart__row__content">
+                    7 + 7 + 4
+                </div>
+            </div>
+            <div class="plans__chart__row text--big">
+                <div class="plans__chart__row__content--big">
+                    Proteja sua família com o controle parental
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content plans__chart__header__content-highlight">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+                <div class="plans__chart__row__content">
+                    <img src="./dist/images/icones/check.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <span class="text--sm">* O preço pode variar caso a assinatura seja feita através de outras plataformas.</span>
+    </section>
+    
+    
+
+    <script src="./src/main.js"></script>
 </body>
 </html>

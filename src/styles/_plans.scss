@@ -1,0 +1,107 @@
+@use 'var';
+
+.plans::-webkit-scrollbar {
+    width: 0px;
+  }
+.plans{
+    padding: 5.6vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2,p{
+        color: var.$fn-color-s;
+        margin-bottom: 20px;
+    }
+
+    span{
+        text-align: left;
+    }
+
+    
+
+    &__chart::-webkit-scrollbar {
+        width: 0px;
+      }
+    &__chart{
+        
+        &__header{
+            background-color: var.$bg-color;
+            display: flex;
+            flex-direction: row;
+            position:sticky;
+            top:0;
+            width:100%;
+            border-bottom: 1px solid var.$fn-color-s;
+            padding-top: 84px;
+    
+            &__content{
+                text-align: center;
+                padding: 30px 12px 0px;
+                border-top: 2px solid hsla(0,0%,100%,.1);;
+                width: 22.33%;
+                position: relative;
+                align-items: center;
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                justify-content: space-between;
+                &--big{
+                    width: 33%;
+                }
+
+                &__badge{
+                    background-color: #f9f9f9;
+                    border-radius: 20px;
+                    color: #040714;
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 700;
+                    padding: 2px 12px;
+                    position: absolute;
+                    text-align: center;
+                    top: -15px;
+                    font-size: 12px;
+                
+                }
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 8px;
+                }
+    
+                .button{
+                    font-size: 14px;
+                    height: 50px;
+                    max-width: 260px;
+                    padding: 8px 14px;
+                }
+
+                &-highlight{
+                    background-color: var.$bg-hightlight;
+                }
+            }
+        }
+
+        &__row{
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid hsla(0,0%,75%,.3);;
+            &__content{
+                width: 22.33%;
+                padding: 20px 0;
+
+                &--big{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    width: 33%;
+                    text-align: left;
+                }
+            }
+    
+        }
+    }
+
+}
