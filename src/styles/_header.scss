@@ -1,0 +1,70 @@
+@use 'var';
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var.$bg-color;
+    transition: background-color 0.5s ease;
+
+    .button{
+        height: 50px;
+
+        @media (max-width:768px){
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
+    }
+
+
+    @media (max-width: 768px){
+        
+    }
+        
+    &--is-hidden{
+        background-color: transparent;
+        transition: background-color 0.5s ease;
+
+        .header{
+            &__logo,
+            &__links__item:first-child{
+                transition: opacity 0.5s ease;
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__container{
+        padding: 8px 26px 0px;
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width:768px){
+            padding: 0 12px 0 20px;
+
+        }
+    }
+
+    &__logo{
+        transition: opacity 0.5s ease;
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+
+        @media (max-width:768px){
+            max-width: 64px;
+        }
+    }
+    &__links{
+        display: flex;
+        &__item{
+            transition: opacity 0.5s ease;
+            margin: 5px;
+        }
+    }
+}
+

@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll('[data-tab-btn]');
-    
+    const questions = document.querySelectorAll('[data-faq-question]');
+    const heroSection = document.querySelector('.hero');
+    const heroHeight = heroSection.clientHeight;
+
+    window.addEventListener('scroll', function(){
+        const scollPos = window.scrollY;
+        
+        if(scollPos < heroHeight){
+            HideHeaderBtns();
+        }else{
+            ShowHeaderBtns();
+        }
+    })
+
+
+    //Shows Section tabs- Change the shows images
     for(let i = 0; i < buttons.length; i++){
         buttons[i].addEventListener('click', function(btn){
             const target = (btn.target.dataset.tabBtn);
@@ -11,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function(){
             btn.target.classList.add('shows__tabs__btn--is-active')
 
         })
+    }
+
+    //Faq section accordion
+    for(let i = 0;i < questions.length; i++){
+        questions[i].addEventListener('click', openCloseQuestions)
     }
 })
 
@@ -29,4 +49,20 @@ function removeBtnActive(){
 
         buttons[i].classList.remove('shows__tabs__btn--is-active');
     }
+}
+
+function openCloseQuestions(element){
+    const openClass = 'faq__questions__item--is-open';
+    const fatherElement = element.target.parentNode;
+
+    fatherElement.classList.toggle(openClass);
+}
+
+function HideHeaderBtns(){
+    const header = document.querySelector('.header');
+    header.classList.add('header--is-hidden')
+}
+function ShowHeaderBtns(){
+    const header = document.querySelector('.header');
+    header.classList.remove('header--is-hidden')
 }

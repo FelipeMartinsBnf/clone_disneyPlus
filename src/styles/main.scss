@@ -2,6 +2,10 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'devices';
+@use 'faq';
+@use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -37,14 +41,24 @@ body{
 
 .text--big{
     @include text(18px);
+    @media (max-width:768px){
+        @include text(15px);
+    }
 }
 
 .text{
     @include text;
+    @media (max-width:768px){
+        @include text(14px);
+    }
+    
 }
 
 .text--sm{
-    @include text(12px)
+    @include text(12px);
+    @media (max-width:768px){
+        @include text(11px);
+    }
 }
 
 .link--text{
@@ -54,10 +68,18 @@ body{
 }
 
 .title{
-    @include title()
+    @include title();
+
+    @media (max-width:768px){
+        @include title(26px);
+    }
 }
 .title--sm{
-    @include title(28px)
+    @include title(28px);
+
+    @media (max-width:768px){
+        @include title(22px);
+    }
 }
 
 .button{
@@ -66,13 +88,95 @@ body{
         height: 60px;
         font-size: 18px;
         color: var.$fn-color-s;
-        background-color: #6421ff;
+        background-color: var.$btn-bg-p;
         text-transform: uppercase;
         border-radius: 4px;
-        margin-top: 2vw;
-        margin-bottom: 8px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
+        padding: 8px 14px;
+        letter-spacing: 1px;
+
+        border: 1px solid var.$btn-bg-p;
+
+        &:hover{
+            background-color: lighten(var.$btn-bg-p, 5%);
+        }
+
+        &--secondary{
+            background-color: var.$btn-bg-sec;
+            border: 1px solid var.$btn-bg-sec;
+            
+            &:hover{
+                background-color: lighten(var.$btn-bg-sec, 5%);
+            }
+        }
+
+        &--dark{
+            background-color: rgba(var.$btn-gb-dark, 0.8);
+
+            &:hover{
+                background-color: var.$fn-color-s;
+                color: var.$bg-color;
+            }
+        }
+}
+
+.image-text-section{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media (max-width:768px){
+        display: block;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    &__content{
+        padding: 0 2vw;
+
+        h2{
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    &--img-full-width{
+        position: relative;
+        display: block;
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        &__content{
+            left: 50%;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width:768px){
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+li{
+    list-style-type: none;
 }
