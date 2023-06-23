@@ -1,0 +1,117 @@
+@use 'var';
+
+
+.hero{
+    position: relative;
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url('../images/matrix-hero2.png');
+    box-shadow: inset 0px -10px 13px 1px #040714;
+    @media (max-width: 768px){
+        background-size: contain;
+        background-image: url('../images/matrix-hero2.png');
+        min-height: auto;
+    }
+
+    &__content{
+        position: absolute;
+        bottom: 20px;
+        align-items: center;
+        max-width: 45%;
+        text-align: left;
+        @media (max-width: 768px){
+            max-width: 100%;
+            position: relative;
+            margin-top: 200px;
+        }
+
+        &__info{
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            &__img{
+                max-width: 100%;
+                width: 23px;
+                border-radius: 3px;
+            }
+            &__tag{
+                color: var.$fn-color;
+                padding: 5px;
+                border: 1px solid var.$fn-color;
+                border-radius: 5px;
+                margin-left: 10px;
+                font-size: 10px;
+                font-weight: bold;
+            }
+            &__text{
+                color: var.$fn-color;
+                margin-left: 15px;
+            }
+        } 
+
+        &__description{
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 20px;
+            @media (max-width: 768px){
+                font-size: 16px;
+            }
+        }
+
+        &__btns{
+            display: flex;
+            @media (max-width: 768px){
+                display: block;
+                flex-direction: column;
+            }
+            &__button--watch{
+                background-color: var.$fn-color-s;
+                border: 1px solid var.$fn-color-s;
+                max-width: 248px;
+                display: inline-flex;
+                justify-content: space-between;
+                padding: 0 60px;
+                color: black;
+                font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 20px;
+    
+                &:hover{
+                    background-color: darken(var.$fn-color-s, 20%);
+                    
+                }
+                
+            }
+            &__button--sec{
+                display: inline-block;
+                text-decoration: none;
+                color: var.$fn-color-s;
+                text-align: center;
+                margin-left: 5%;
+                @media (max-width: 768px){
+                    
+
+                }
+                .material-symbols-outlined{
+                    color: var.$fn-color-s;
+                    display: block;
+                    font-size: 40px;
+                    &:hover{
+                        color: darken(var.$fn-color-s, 20%);;
+                    }
+                }
+                &:hover{
+                    color: darken(var.$fn-color-s, 20%);;
+                }
+            }
+        }
+    }
+}
+
+.d-flex{
+    display: flex;
+}

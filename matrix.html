@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The matrix | Disney+</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/matrix.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="">
+                <img src="./dist/images/disneyplus.svg" class="header__logo" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="index.html" class="button button--dark"><span
+                            class="material-symbols-outlined title">home</span> Home</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/The_Matrix_logo1.png" alt="Disney+">
+            </div>
+            <div class="hero__content__info">
+                <img class="hero__content__info__img" src="./src/images/14._tag.png"
+                    alt="Não recomendado para menores de 14 anos">
+                <span class="hero__content__info__tag">UHD 4K</span>
+                <span class="hero__content__info__tag">HDR</span>
+                <p class="hero__content__info__text"> 1999 </p>
+                <p class="hero__content__info__text"> 2h 16min</p>
+            </div>
+            <p class="hero__content__description text--big">
+                O que vemos: Nosso dia a dia é verdadeiro. - O que é real: O mundo é uma farsa, construído por uma das
+                mais poderosas máquinas com inteligência artificial para nos controlar.
+            </p>
+            <div class="hero__content__btns">
+                <a class="button hero__content__btns__button--watch"><span
+                        class="material-symbols-outlined">play_circle</span>Assistir</a>
+                <div class="hero__content__btns__button--sec d-flex">
+                    <a href="#" class="hero__content__btns__button--sec"><span
+                            class="material-symbols-outlined">add_circle</span>Lista</a>
+                    <a href="#" class="hero__content__btns__button--sec"><span
+                            class="material-symbols-outlined">download</span>Download</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="tabs">
+        <nav class="tabs__btns">
+            <button data-tab-btn="more" class="tabs__btns__btn tabs__btns__btn--is-active">Relacionados</button>
+            <button data-tab-btn="about" class="tabs__btns__btn">Detalhes</button>
+        </nav>
+        <div class="tabs__shows tabs__shows--is-active" data-tab-id="more">
+            <button class="tabs__shows__scroll" id="btn-left"><span class="material-symbols-outlined">navigate_before</span></button>
+            <ul class="tabs__shows" id="shows">
+                <li class="tabs__shows__item">
+                    <img src="./dist/images/mais_populares/bluey.jpg" alt="Spidey">
+                </li>
+                <li class="tabs__shows__item">
+                    <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Spidey">
+                </li>
+                <li class="tabs__shows__item">
+                    <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="Spidey">
+                </li>
+                <li class="tabs__shows__item">
+                    <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Spidey">
+                </li>
+                <li class="tabs__shows__item">
+                    <img src="./dist/images/mais_populares/red.jpg" alt="Spidey">
+                </li>
+                <li class="tabs__shows__item">
+                    <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Spidey">
+                </li>
+            </ul>
+            <button class="tabs__shows__scroll" id="btn-right"><span class="material-symbols-outlined">navigate_next</span></button>
+        </div>
+        <div data-tab-id="about" class="tabs__shows tabs__about">
+            <h3 class="title--sm">Saiba Mais sobre o Filme:</h3>
+            <p>
+                <span class="title--sm tabs__about__text">Classificação do conteúdo:<br></span>
+                <span class="text">Violência</span>
+            </p>
+            <p>
+                <span class="title--sm tabs__about__text">Idiomas de áudio<br></span>
+                <span class="text">Português, Français (Canada), Español (España), Italiano, Español (Latinoamérica), English, Polski, Deutsch, English [Audio Description], Français (France)</span>
+            </p>
+            <p>
+                <span class="title--sm tabs__about__text">Diretores<br></span>
+                <span class="text">Lilly Wachowski, Lana Wachowski</span>
+            </p>
+            <p>
+                <span class="title--sm tabs__about__text">Produtores<br></span>
+                <span class="text">Peter Doyle, Joel Silver, Barrie M. Osborne, Andrew Mason, Lilly Wachowski, Lana Wachowski, Erwin Stoff, Bruce Berman, Zareh Nalbandian</span>
+            </p>
+            <p>
+                <span class="title--sm tabs__about__text">Atores principais<br></span>
+                <span class="text">Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss</span>
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">
+                        Termos e Condições de Uso
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">
+                        Política de privacidade
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">
+                        Proteção de Dados no Brasil
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--sm">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--sm">
+                ® 2023 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura
+                paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--sm">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é
+                comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas,
+                12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
+    <script src="./dist/js/movie.js"></script>
+</body>
+
+</html>

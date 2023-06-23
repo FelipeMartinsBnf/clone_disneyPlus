@@ -1,0 +1,23 @@
+@use 'main-page/header';
+@use 'main-page/footer';
+@use 'var';
+// @use 'main-page/hero';
+
+@use 'movie-page/hero';
+@use 'movie-page/tabs';
+
+.header{
+    span{
+        margin-right: 5px;
+
+    }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
